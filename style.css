@@ -1,0 +1,6 @@
+.test-section {
+    clip-path: polygon(50% 0%, 100% 38%, 88% 100%, 18% 100%, 0% 38%);
+    background-color: aquamarine;
+    height: 150px;
+    width: 150px;
+}
