@@ -1,6 +1,5 @@
-.test-section {
-    clip-path: polygon(50% 0%, 100% 38%, 88% 100%, 18% 100%, 0% 38%);
-    background-color: aquamarine;
-    height: 150px;
-    width: 150px;
+:root {
+    --primary-color: #1d293a;
+    --secondary-color: #fff200;
+    --third-color: #4cd137;
 }
