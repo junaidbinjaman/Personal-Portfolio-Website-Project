@@ -14,13 +14,19 @@
 
 body {
     font-family: var(--primary-font);
-    position: relative;
     background-color: var(--primary-color);
-    position: relative;
-    min-width: 500px;
-    min-height: 200px;
-    color: #fff;
-    height: 100vh;
+}
+
+header {
+    color: red;
+}
+
+p {
+    color: white;
+}
+
+.jwolt {
+    color: red;
 }
 
 
@@ -108,7 +114,8 @@ span::after {
 }
 
 #nav a:hover {
-    background: var(--secondary-color);
+    background: var(--primary-color);
+    color: white;
 }
 
 ul {
@@ -222,4 +229,87 @@ article a:hover {
         padding-top: 80px;
         font-size: 60px;
     }
+}
+
+
+/* hero area style starts */
+
+.hero-area {
+    height: 400px;
+    margin-top: 70px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-area-container {
+    position: absolute;
+    color: white;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 1200px;
+}
+
+.hero-area-left b {
+    font-size: 40px;
+    -webkit-text-fill-color: var(--primary-color);
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: white;
+    position: relative;
+}
+
+.hero-area-left b::before {
+    position: absolute;
+    content: "Hello_World...";
+    -webkit-text-fill-color: var(--third-color);
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: var(--third-color);
+    border-right: 5px solid var(--third-color);
+    margin-right: 10px;
+    width: 2px;
+    overflow: hidden;
+    animation-name: animation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animation {
+    0%,
+    90%,
+    100% {
+        width: 0%;
+    }
+    50%,
+    70% {
+        width: 100%;
+    }
+}
+
+.hero-area-left h1 {
+    font-size: 30px;
+    margin-top: 90px;
+}
+
+.hero-area-left p {
+    line-height: 30px;
+    margin-top: 20px;
+}
+
+.hero-area-left button {
+    padding: 13px 23px;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: var(--third-color);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.hero-area-right {
+    text-align: center;
+}
+
+.hero-area-right img {
+    border-radius: 100%;
 }
